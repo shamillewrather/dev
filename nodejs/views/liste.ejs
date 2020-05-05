@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'/>
+    <title>Liste des cartes</title>
+</head>
+<body>
+<h1>Liste des cartes de <%= utilisateur %></h1>
+
+<ul>
+    <% cartes.forEach(function(carte){ %>
+        <li> <%= carte.question %> - <%= carte.reponse %> - <%= carte.id %> -
+            <a href="/<%= utilisateur %>/delete/<%= carte.id %>">DELETE ME</a> -
+            <a href="/<%= utilisateur %>/modification/<%= carte.id %>">CHANGE ME</a>
+        </li>
+    <% }) %>
+
+</ul>
+
+</body>
+</html>

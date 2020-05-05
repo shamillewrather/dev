@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'/>
+    <title>Nouvelle carte</title>
+</head>
+<body>
+<h1>Modifier carte pour <%= utilisateur %></h1>
+<form action='/<%= utilisateur %>/confirm_modification/<%= id_carte %>' method='get'>
+
+    <label>Question</label><br>
+    <input type='text' name='question' value="<%= question %>"><br>
+
+    <label>Réponse</label><br>
+    <input type='text' name='reponse' value="<%= reponse %>"><br>
+
+    <button type='submit'>Enregistrer</button>
+
+</form>
+
+</body>
+</html>
